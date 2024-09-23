@@ -1,0 +1,400 @@
+<section>
+  <div class="controls">
+    <div>
+      <h2>Base Shape</h2>
+
+      <div class="btns">
+        <button
+          type="button"
+          [class.active]="qr.shape() === 'square'"
+          (click)="shape.set('square')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0,0 H24 V24 H0 Z" fill="white"></path>
+          </svg>
+        </button>
+        <button
+          type="button"
+          [class.active]="qr.shape() === 'circle'"
+          (click)="shape.set('circle')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12,0 A12,12 0 1,1 12,24 A12,12 0 1,1 12,0 Z"
+              fill="white"
+            ></path>
+          </svg>
+        </button>
+        <button
+          type="button"
+          [class.active]="qr.shape() === 'rounded'"
+          (click)="shape.set('rounded')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M4,0 H20 A4,4 0 0,1 24,4 V20 A4,4 0 0,1 20,24 H4 A4,4 0 0,1 0,20 V4 A4,4 0 0,1 4,0 Z"
+              fill="white"
+            ></path>
+          </svg>
+        </button>
+        <button
+          type="button"
+          [class.active]="qr.shape() === 'diamond'"
+          (click)="shape.set('diamond')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12,0 L24,12 L12,24 L0,12 Z" fill="white"></path>
+          </svg>
+        </button>
+        <button
+          type="button"
+          [class.active]="qr.shape() === 'triangle'"
+          (click)="shape.set('triangle')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12,0 L24,24 L0,24 Z" fill="white"></path>
+          </svg>
+        </button>
+        <button
+          type="button"
+          [class.active]="qr.shape() === 'star'"
+          (click)="shape.set('star')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12,0L14.821369211003871,8.11671842700025L23.412678195541844,8.29179606750063L16.565071278216738,13.483281572999747L19.053423027509677,21.70820393249937L12,16.8L4.946576972490323,21.70820393249937L7.434928721783263,13.483281572999749L0.5873218044581563,8.291796067500632L9.178630788996127,8.116718427000253 Z"
+              fill="white"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Base Padding</h2>
+
+      <div class="btns justify-center">
+        <button type="button" (click)="padding.set(padding() + 1)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-plus"
+          >
+            <path d="M5 12h14" />
+            <path d="M12 5v14" />
+          </svg>
+        </button>
+
+        <button type="button" (click)="padding.set(padding() - 1)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-minus"
+          >
+            <path d="M5 12h14" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Eye Shape</h2>
+
+      <div class="btns">
+        <button
+          type="button"
+          [class.active]="qr.eyeShape() === 'square'"
+          (click)="eyeShape.set('square')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0,0 H24 V24 H0 Z" fill="white"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          [class.active]="qr.eyeShape() === 'circle'"
+          (click)="eyeShape.set('circle')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12,0 A12,12 0 1,1 12,24 A12,12 0 1,1 12,0 Z"
+              fill="white"
+            ></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          [class.active]="qr.eyeShape() === 'rounded'"
+          (click)="eyeShape.set('rounded')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M4,0 H20 A4,4 0 0,1 24,4 V20 A4,4 0 0,1 20,24 H4 A4,4 0 0,1 0,20 V4 A4,4 0 0,1 4,0 Z"
+              fill="white"
+            ></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          [class.active]="qr.eyeShape() === 'diamond'"
+          (click)="eyeShape.set('diamond')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12,0 L24,12 L12,24 L0,12 Z" fill="white"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          [class.active]="qr.eyeShape() === 'triangle'"
+          (click)="eyeShape.set('triangle')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12,0 L24,24 L0,24 Z" fill="white"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          [class.active]="qr.eyeShape() === 'star'"
+          (click)="eyeShape.set('star')"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12,0L14.821369211003871,8.11671842700025L23.412678195541844,8.29179606750063L16.565071278216738,13.483281572999747L19.053423027509677,21.70820393249937L12,16.8L4.946576972490323,21.70820393249937L7.434928721783263,13.483281572999749L0.5873218044581563,8.291796067500632L9.178630788996127,8.116718427000253 Z"
+              fill="white"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Eye Pattern Gap</h2>
+
+      <div class="btns justify-center">
+        <button type="button" (click)="eyeGap.set(eyeGap() + 1)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-plus"
+          >
+            <path d="M5 12h14" />
+            <path d="M12 5v14" />
+          </svg>
+        </button>
+
+        <button type="button" (click)="eyeGap.set(eyeGap() - 1)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-minus"
+          >
+            <path d="M5 12h14" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Background</h2>
+
+      <div class="btns btns--background">
+        <div>
+          <input type="color" [(ngModel)]="primary" title="primary color" />
+
+          <input
+            type="color"
+            [(ngModel)]="secoundary"
+            title="secoundary color"
+          />
+        </div>
+
+        <div>
+          @let solidBG = primary();
+          <button
+            type="button"
+            (click)="setBackground(solidBG)"
+            title="Solid"
+            [style]="{ background: solidBG }"
+          ></button>
+
+          @let linearBG =
+            "linear-gradient(90deg," + primary() + "," + secoundary() + ")";
+          <button
+            type="button"
+            title="Linear gradient"
+            (click)="setBackground(linearBG)"
+            [style]="{
+              background: linearBG,
+            }"
+          ></button>
+
+          @let radialBG =
+            "radial-gradient(circle, " +
+            primary() +
+            " 0%, " +
+            secoundary() +
+            " 100%)";
+          <button
+            type="button"
+            title="radial gradient"
+            (click)="setBackground(radialBG)"
+            [style]="{
+              background: radialBG,
+            }"
+          ></button>
+
+          @let conicBG =
+            "conic-gradient(from 36deg, " +
+            primary() +
+            ", " +
+            secoundary() +
+            ")";
+          <button
+            type="button"
+            title="conic gradient"
+            (click)="setBackground(conicBG)"
+            [style]="{
+              background: conicBG,
+            }"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Logo</h2>
+
+      <div class="btns justify-center">
+        <button
+          type="button"
+          style="position: relative"
+          title="Logo 1"
+          (click)="logo.set('logo1.svg')"
+        >
+          <img src="logo1.svg" width="25" />
+        </button>
+
+        <input
+          type="file"
+          style="display: none"
+          #myLogo
+          accept="image/*"
+          (change)="setMyLogo(myLogo.files?.[0])"
+        />
+
+        <button
+          type="button"
+          style="position: relative"
+          title="Your logo"
+          (click)="myLogo.click()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-upload"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="17 8 12 3 7 8" />
+            <line x1="12" x2="12" y1="3" y2="15" />
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          style="position: relative"
+          title="No logo"
+          (click)="logo.set('')"
+        ></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <ngx-qrcode
+    #qr
+    [style]="'--qr-background: ' + qrBackground()"
+    [value]="value()"
+    [shape]="shape()"
+    [eyeShape]="eyeShape()"
+    [gap]="padding()"
+    [eyeGap]="eyeGap()"
+  >
+    @if (logo(); as logo) {
+      <img
+        [src]="logo"
+        qrLogo
+        [logoAreaSize]="70"
+        style="max-width: 50px; width: auto; height: auto"
+      />
+    }
+  </ngx-qrcode>
+  <div>
+    <input type="text" placeholder="QR value" [(ngModel)]="value" />
+
+    <pre>
+      <code>
+        &lt;style&gt;
+          --qr-background: {{qrBackground()}};
+        &lt;/style&gt;
+
+        &lt;ngx-qrcode
+          [value]="'{{value()}}'"
+          [shape]="'{{shape()}}'"
+          [eyeShape]="'{{eyeShape()}}'"
+          [gap]="{{padding()}}"
+          [eyeGap]="{{eyeGap()}}"
+        &gt;
+          @if (logo(); as logo) {
+            &lt;img
+              qrLogo
+              [logoAreaSize]="70"
+              [src]="'{{logo}}'"
+              style="max-width: 50px;"
+            /&gt;
+          }
+        &lt;/ngx-qrcode&gt;
+      </code>
+    </pre>
+  </div>
+</main>
