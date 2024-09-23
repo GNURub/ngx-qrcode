@@ -1,6 +1,11 @@
 {
   "name": "@gnurub/ngx-qrcode",
   "version": "0.0.1",
+  "private": false,
+  "author": {
+    "name": "Ruben Cid Lara",
+    "email": "rubencidlara@gmail.com"
+  },
   "peerDependencies": {
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0"
