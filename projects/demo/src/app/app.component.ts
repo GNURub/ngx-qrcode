@@ -1,8 +1,7 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { Component, model, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { QRLogoDirective, Shape } from '../../../qr-code/src/lib';
-import { QRCodeComponent } from '../../../qr-code/src/public-api';
+import { QRCodeComponent, QRLogoDirective, Shape } from '@gnurub/ngx-qrcode';
 
 @Component({
   selector: 'app-root',

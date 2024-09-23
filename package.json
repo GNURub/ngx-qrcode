@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@gnurub/ngx-qrcode": "^0.0.1",
     "@angular/animations": "^18.2.5",
     "@angular/common": "^18.2.5",
     "@angular/compiler": "^18.2.5",
@@ -38,6 +39,10 @@
     "ng-packagr": "^18.2.1",
     "prettier": "^3.3.3",
     "typescript": "~5.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GNURub/ngx-qrcode.git"
   },
   "packageManager": "pnpm@9.11.0+sha256.1c0e33f70e5df9eede84a357bdfa0b1f9dba6e58194628d48a1055756f553754"
 }
