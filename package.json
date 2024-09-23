@@ -19,7 +19,6 @@
     "@angular/platform-browser-dynamic": "^18.2.5",
     "@angular/router": "^18.2.5",
     "@gnurub/ngx-qrcode": "^0.0.2",
-    "@nestjs-plugins/nestjs-nats-jetstream-transport": "^2.2.6",
     "qrcode": "^1.5.4",
     "rxjs": "~7.8.1",
     "tslib": "^2.7.0",
