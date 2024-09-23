@@ -4,7 +4,9 @@ This is a simple Angular +18 component to generate QR codes.
 Based on [react-native-qrcode-skia](https://github.com/enzomanuelmangano/react-native-qrcode-skia) library.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GNURub/ngx-qrcode/refs/heads/main/.assets/poster.png" width="950" title="demo">
+  <a href="https://gnurub.github.io/ngx-qrcode/" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/GNURub/ngx-qrcode/refs/heads/main/.assets/poster.png" width="950" title="demo">
+  </a>
 </p>
 
 ## Requirements
