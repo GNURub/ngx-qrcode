@@ -1,6 +1,6 @@
-# ngx-qrcode 🎨
+# @gnurub/ngx-qrcode 🎨
 
-This is a simple Angular +18 component to generate QR codes.
+This is a simple Angular +18 component to generate moderns QR codes.
 Based on [react-native-qrcode-skia](https://github.com/enzomanuelmangano/react-native-qrcode-skia) library.
 
 ## Requirements
@@ -10,13 +10,13 @@ Based on [react-native-qrcode-skia](https://github.com/enzomanuelmangano/react-n
 ## Installation
 
 ```sh
-npm i -S ngx-qrcode
+npm i -S @gnurub/ngx-qrcode
 ```
 
 or
 
 ```sh
-ng add ngx-qrcode
+ng add @gnurub/ngx-qrcode
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ ng add ngx-qrcode
 You might need a very simple QRCode component in your app and you can achieve that by using the basic props (value and size). Here is an example:
 
 ```tsx
-import { QRCodeComponent } from "ngx-qrcode";
+import { QRCodeComponent } from "@gnurub/ngx-qrcode";
 
 @Component({
   selector: "app-root",
@@ -37,7 +37,7 @@ export class AppComponent {}
 With Logo
 
 ```tsx
-import { QRCodeComponent, QRLogoDirective } from "ngx-qrcode";
+import { QRCodeComponent, QRLogoDirective } from "@gnurub/ngx-qrcode";
 
 @Component({
   selector: "app-root",
