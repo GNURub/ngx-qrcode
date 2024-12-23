@@ -20,12 +20,11 @@ export interface ShapeOptions {
 }
 
 @Component({
-  selector: 'ngx-qrcode',
-  standalone: true,
-  host: {
-    '[style]': 'containerStyle()',
-  },
-  template: `
+    selector: 'ngx-qrcode',
+    host: {
+        '[style]': 'containerStyle()',
+    },
+    template: `
     @let s = size();
 
     <svg
@@ -44,9 +43,9 @@ export interface ShapeOptions {
 
     <ng-content select="[qrLogo]"></ng-content>
   `,
-  imports: [QRLogoDirective],
-  styles: [
-    `
+    imports: [QRLogoDirective],
+    styles: [
+        `
       @property --qr-background {
         syntax: '<background-color|color>';
         inherits: false;
@@ -59,7 +58,7 @@ export interface ShapeOptions {
         background: var(--qr-background);
       }
     `,
-  ],
+    ]
 })
 export class QRCodeComponent {
   public readonly errorCorrectionLevel = input<QRCodeErrorCorrectionLevel>('H');

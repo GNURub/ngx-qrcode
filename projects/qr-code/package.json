@@ -1,14 +1,24 @@
 {
   "name": "@gnurub/ngx-qrcode",
-  "version": "0.0.2",
+  "version": "1.0.0",
+  "description": "Angular QR Code Generator",
+  "keywords": [
+    "angular",
+    "angular18",
+    "angular19",
+    "qrcode",
+    "qr-code",
+    "ngx-qrcode",
+    "qr"
+  ],
   "private": false,
   "author": {
     "name": "Ruben Cid Lara",
     "email": "rubencidlara@gmail.com"
   },
   "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+    "@angular/common": "^19.0.0",
+    "@angular/core": "^19.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

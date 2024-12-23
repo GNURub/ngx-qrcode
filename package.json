@@ -1,6 +1,6 @@
 {
   "name": "qr-code",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,42 +8,46 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "author": {
+    "name": "Ruben Cid Lara",
+    "email": "rubencidlara@gmail.com"
+  },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^18.2.5",
-    "@angular/common": "^18.2.5",
-    "@angular/compiler": "^18.2.5",
-    "@angular/core": "^18.2.5",
-    "@angular/forms": "^18.2.5",
-    "@angular/platform-browser": "^18.2.5",
-    "@angular/platform-browser-dynamic": "^18.2.5",
-    "@angular/router": "^18.2.5",
+    "@angular/animations": "^19.0.5",
+    "@angular/common": "^19.0.5",
+    "@angular/compiler": "^19.0.5",
+    "@angular/core": "^19.0.5",
+    "@angular/forms": "^19.0.5",
+    "@angular/platform-browser": "^19.0.5",
+    "@angular/platform-browser-dynamic": "^19.0.5",
+    "@angular/router": "^19.0.5",
     "@gnurub/ngx-qrcode": "^0.0.2",
     "qrcode": "^1.5.4",
     "rxjs": "~7.8.1",
-    "tslib": "^2.7.0",
+    "tslib": "^2.8.1",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.2.5",
-    "@angular/cli": "^18.2.5",
-    "@angular/compiler-cli": "^18.2.5",
-    "@types/jasmine": "~5.1.4",
+    "@angular-devkit/build-angular": "^19.0.6",
+    "@angular/cli": "^19.0.6",
+    "@angular/compiler-cli": "^19.0.5",
+    "@types/jasmine": "~5.1.5",
     "@types/qrcode": "^1.5.5",
-    "angular-cli-ghpages": "^2.0.1",
-    "jasmine-core": "~5.3.0",
+    "angular-cli-ghpages": "^2.0.3",
+    "jasmine-core": "~5.5.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "ng-packagr": "^18.2.1",
-    "prettier": "^3.3.3",
-    "typescript": "~5.4.2"
+    "ng-packagr": "^19.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "~5.6.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GNURub/ngx-qrcode.git"
   },
-  "packageManager": "pnpm@9.11.0+sha256.1c0e33f70e5df9eede84a357bdfa0b1f9dba6e58194628d48a1055756f553754"
+  "packageManager": "pnpm@9.15.1"
 }
