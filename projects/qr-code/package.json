@@ -1,6 +1,6 @@
 {
   "name": "@gnurub/ngx-qrcode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular QR Code Generator",
   "keywords": [
     "angular",
@@ -18,7 +18,8 @@
   },
   "peerDependencies": {
     "@angular/common": "^19.0.0",
-    "@angular/core": "^19.0.0"
+    "@angular/core": "^19.0.0",
+    "qrcode": "^1.5.4"
   },
   "dependencies": {
     "tslib": "^2.3.0"
