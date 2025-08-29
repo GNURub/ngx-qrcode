@@ -16,7 +16,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "paths": {
-      "qr-code": [
+      "@gnurub/ngx-qrcode": [
         "./dist/qr-code"
       ]
     },

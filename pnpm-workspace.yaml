@@ -1,2 +1,2 @@
 packages:
-  - "dist/qr-code"
+  - "projects/*"
