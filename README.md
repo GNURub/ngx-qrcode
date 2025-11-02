@@ -11,7 +11,7 @@ Based on [react-native-qrcode-skia](https://github.com/enzomanuelmangano/react-n
 
 ## Requirements
 
-- Angular 18, 19
+- Angular 18, 19, 20
 
 ## Installation
 
